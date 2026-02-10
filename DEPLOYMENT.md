@@ -33,9 +33,9 @@ git push origin main
 
 ### 5. Verificar el deployment
 
-- Ve a: https://github.com/juan-valenzuela-rodriguez/juan-valenzuela-rodriguez.github.io/actions
+- Ve a: https://github.com/juanes1eban/juanes1eban.github.io/actions
 - Espera a que el workflow "Deploy Jekyll with GitHub Pages" termine (ícono verde ✅)
-- Visita tu sitio en: https://juan-valenzuela-rodriguez.github.io/
+- Visita tu sitio en: https://juanes1eban.github.io/
 
 ## Configuración de GitHub Pages
 
@@ -52,7 +52,7 @@ Si es la primera vez:
 
 1. **Verifica que el repositorio sea público**
 2. **Revisa el Actions log:**
-   - https://github.com/juan-valenzuela-rodriguez/juan-valenzuela-rodriguez.github.io/actions
+   - https://github.com/juanes1eban/juanes1eban.github.io/actions
 3. **Asegúrate de que el archivo workflow existe:**
    - `.github/workflows/jekyll-gh-pages.yml`
 
@@ -73,8 +73,8 @@ Para actualizar el contenido:
 
 ## Monitoreo
 
-- **GitHub Actions:** https://github.com/juan-valenzuela-rodriguez/juan-valenzuela-rodriguez.github.io/actions
-- **Sitio en vivo:** https://juan-valenzuela-rodriguez.github.io/
+- **GitHub Actions:** https://github.com/juanes1eban/juanes1eban.github.io/actions
+- **Sitio en vivo:** https://juanes1eban.github.io/
 - **Verificación SEO:** https://search.google.com/search-console
 
 ## Mejoras futuras recomendadas

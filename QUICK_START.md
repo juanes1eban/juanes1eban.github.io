@@ -19,7 +19,7 @@ git push origin main
 # GitHub Actions compila y despliega automáticamente
 ```
 
-**URL del sitio:** https://smellwing.github.io/juan-valenzuela-rodriguez.github.io/
+**URL del sitio:** https://juanes1eban.github.io/
 
 ---
 
@@ -94,8 +94,8 @@ docker run --rm -v ${PWD}:/srv/jekyll -p 4000:4000 jekyll/jekyll jekyll serve
 
 ### Opción 2: Jekyll Local
 ```bash
-bundle exec jekyll serve --baseurl '/juan-valenzuela-rodriguez.github.io'
-# Visita: http://localhost:4000/juan-valenzuela-rodriguez.github.io/
+bundle exec jekyll serve
+# Visita: http://localhost:4000/
 ```
 
 ---
@@ -142,11 +142,11 @@ git checkout -b mi-prueba
    ```
 
 2. **Ver progreso:**
-   - Ve a: https://github.com/smellwing/juan-valenzuela-rodriguez.github.io/actions
+   - Ve a: https://github.com/juanes1eban/juanes1eban.github.io/actions
    - Espera el checkmark verde ✅
 
 3. **Visitar sitio:**
-   - https://smellwing.github.io/juan-valenzuela-rodriguez.github.io/
+   - https://juanes1eban.github.io/
 
 ---
 

@@ -15,7 +15,7 @@ Tu sitio de CV ha sido **completamente reestructurado** usando las mejores prác
 ## 📁 Nueva Estructura
 
 ```
-📦 juan-valenzuela-rodriguez.github.io/
+📦 juanes1eban.github.io/
 │
 ├── 📊 _data/                        ← Todos tus datos en YAML
 │   ├── personal.yml                 Información personal y bio
@@ -303,7 +303,7 @@ git commit -m "feat: Migración a Jekyll con arquitectura modular"
 git push origin main
 
 # Espera 2-3 minutos
-# Visita: https://smellwing.github.io/juan-valenzuela-rodriguez.github.io/
+# Visita: https://juanes1eban.github.io/
 ```
 
 ### Mejoras Futuras
@@ -339,9 +339,9 @@ bundle init
 bundle add jekyll
 
 # Ejecutar servidor local
-bundle exec jekyll serve --baseurl '/juan-valenzuela-rodriguez.github.io'
+bundle exec jekyll serve
 
-# Visitar: http://localhost:4000/juan-valenzuela-rodriguez.github.io/
+# Visitar: http://localhost:4000/
 ```
 
 ### Editar Múltiples Archivos a la Vez

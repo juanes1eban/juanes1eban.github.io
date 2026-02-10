@@ -1,6 +1,6 @@
 # Juan Esteban Valenzuela Rodriguez - Curriculum Vitae
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success)](https://smellwing.github.io/juan-valenzuela-rodriguez.github.io/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success)](https://juanes1eban.github.io/)
 [![Jekyll](https://img.shields.io/badge/Jekyll-4.x-red)](https://jekyllrb.com/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/juanestebanvalenzuela/)
 
@@ -12,7 +12,7 @@ Sitio web personal de curriculum vitae desplegado en GitHub Pages con **Jekyll**
 
 ## 🚀 Sitio en Vivo
 
-Visita mi CV en: **[https://smellwing.github.io/juan-valenzuela-rodriguez.github.io/](https://smellwing.github.io/juan-valenzuela-rodriguez.github.io/)**
+Visita mi CV en: **[https://juanes1eban.github.io/](https://juanes1eban.github.io/)**
 
 ## 🏗️ Arquitectura Jekyll
 
@@ -21,7 +21,7 @@ Este proyecto utiliza Jekyll con una **arquitectura modular y profesional**:
 ### 📁 Estructura del Proyecto
 
 ```
-juan-valenzuela-rodriguez.github.io/
+juanes1eban.github.io/
 ├── _config.yml                 # Configuración global de Jekyll
 ├── index.md                    # Página principal en Markdown
 ├── sitemap.xml                 # Mapa del sitio para SEO
@@ -160,7 +160,7 @@ bundle install
 # Ejecutar servidor local
 bundle exec jekyll serve
 
-# Visitar: http://localhost:4000/juan-valenzuela-rodriguez.github.io/
+# Visitar: http://localhost:4000/
 ```
 
 ### Sin Ruby (usando Docker)

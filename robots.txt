@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://juan-valenzuela-rodriguez.github.io/sitemap.xml
+Sitemap: https://juanes1eban.github.io/sitemap.xml
 
 # Permitir acceso a buscadores principales
 User-agent: Googlebot
