@@ -1,0 +1,27 @@
+.project-card {
+    background: var(--bg-color);
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.project-meta {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.project-meta strong {
+    color: var(--text-color);
+}
+
+.project-description {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,12 @@
+- institution: "Universidad Tecnologica Metropolitana (UTEM)"
+  degree: "Ingeniero Civil en Computacion mencion Informatica"
+  additional: "Licenciado en Ciencias de la Computacion"
+  location: "Facultad de Ingenieria, Nunoa"
+  start_year: 1998
+  end_year: 2012
+
+- institution: "Colegio San Ignacio"
+  degree: "Educacion Media"
+  location: "Sede El Bosque, Providencia"
+  start_year: 1994
+  end_year: 1997

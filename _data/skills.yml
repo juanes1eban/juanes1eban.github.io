@@ -1,0 +1,82 @@
+categories:
+  - name: "Backend Development"
+    skills:
+      - ".NET 8"
+      - ".NET 6"
+      - ".NET Framework 4.8"
+      - "C#"
+      - "NodeJS"
+      - "Express"
+      - "PHP"
+      - "Laravel"
+      - "CakePHP"
+
+  - name: "Frontend Development"
+    skills:
+      - "Angular"
+      - "JavaScript"
+      - "TypeScript"
+      - "jQuery"
+      - "Bootstrap"
+      - "HTML5"
+      - "CSS3"
+
+  - name: "Cloud & DevOps"
+    skills:
+      - "Azure"
+      - "Azure DevOps"
+      - "Azure Blobs"
+      - "Logic Apps"
+      - "Web Apps"
+      - "Amazon EC2"
+      - "Amazon S3"
+      - "OpenShift"
+      - "Git"
+      - "CI/CD"
+
+  - name: "Databases"
+    skills:
+      - "SQL Server"
+      - "MongoDB"
+      - "PostgreSQL"
+      - "T-SQL"
+      - "Stored Procedures"
+
+  - name: "Business Intelligence & ETL"
+    skills:
+      - "Pentaho"
+      - "Tableau"
+      - "SSDT"
+      - "Datamarts"
+      - "RFM Models"
+      - "R Services"
+
+  - name: "APIs & Integration"
+    skills:
+      - "REST APIs"
+      - "WCF"
+      - "Microservices"
+      - "WebPay"
+      - "Transbank SDK"
+      - "Firma Electronica"
+      - "BizTalk"
+
+  - name: "AI-Assisted Development & Vibe Coding"
+    skills:
+      - "Vibe Coding"
+      - "Windsurf IDE"
+      - "VS Code"
+      - "OpenCode CLI"
+      - "GitHub Copilot"
+      - "Claude AI"
+      - "ChatGPT"
+      - "Gemini"
+      - "Prompt Engineering"
+      - "AI Code Generation"
+
+  - name: "Methodologies & Management"
+    skills:
+      - "SCRUM"
+      - "Agile"
+      - "Project Management"
+      - "Team Leadership"

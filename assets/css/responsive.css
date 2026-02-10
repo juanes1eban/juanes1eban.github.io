@@ -1,0 +1,40 @@
+@media (max-width: 600px) {
+    header.main-header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .contact-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    section {
+        padding: 15px;
+    }
+
+    .skills-grid,
+    .references-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media print {
+    body {
+        background: white;
+    }
+    
+    section {
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    .contact-bar a {
+        color: var(--text-color);
+    }
+
+    header.main-header {
+        background: var(--primary-color);
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}

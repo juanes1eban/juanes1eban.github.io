@@ -1,0 +1,41 @@
+name: "Juan Esteban Valenzuela Rodriguez"
+job_title: "Ingeniero Civil en Computacion mencion Informatica"
+subtitle: "Full-Stack Developer"
+email: "juan.esteban.valenzuela@gmail.com"
+phone: "+56 9 98115373"
+location:
+  city: "Santiago Centro"
+  region: "Region Metropolitana"
+  country: "Chile"
+  full_address: "Tarapaca 1324 Dp. 2416"
+
+social:
+  linkedin: "juanestebanvalenzuela"
+  github: "juan-valenzuela-rodriguez"
+  linkedin_url: "https://www.linkedin.com/in/juanestebanvalenzuela/"
+  github_url: "https://github.com/juan-valenzuela-rodriguez"
+
+bio: |
+  Soy un desarrollador full-stack con mas de 15 anos de experiencia resolviendo problemas a traves del codigo. 
+  Desde modernizar sistemas gubernamentales hasta construir plataformas web interactivas, disfruto el reto de 
+  transformar necesidades en soluciones digitales. Me apasiona crear aplicaciones eficientes, escalables y faciles 
+  de usar. Especializado en .NET, JavaScript, PHP, y metodologias agiles, busco proyectos freelance que me permitan 
+  aplicar mi experiencia y creatividad. Si necesitas un desarrollador pragmatico y orientado a resultados, contactame.
+
+quote: "Innovaciones utiles es la clave"
+
+languages:
+  - name: "Espanol"
+    level: "Nativo"
+  - name: "Ingles"
+    level: "Competencia Profesional Basica (TOEIC 690)"
+
+availability:
+  status: "En busca de empleo"
+  roles:
+    - "Desarrollador Web"
+    - "Jefe de Operaciones"
+    - "Lider Tecnico"
+    - "AI-Assisted Developer"
+  modality: "Disponible para proyectos freelance y posiciones full-time"
+  linkedin_connections: "Mas de 500 conexiones | 545 seguidores"

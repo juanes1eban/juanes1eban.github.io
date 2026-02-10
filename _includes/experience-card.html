@@ -1,0 +1,50 @@
+<div class="experience-item">
+    <h3>{{ include.experience.role }}</h3>
+    <p class="company">{{ include.experience.company }}</p>
+    <p class="period">
+        <time datetime="{{ include.experience.start_date }}">
+            {% assign start = include.experience.start_date | split: '-' %}
+            {% case start[1] %}
+                {% when '01' %}Enero
+                {% when '02' %}Febrero
+                {% when '03' %}Marzo
+                {% when '04' %}Abril
+                {% when '05' %}Mayo
+                {% when '06' %}Junio
+                {% when '07' %}Julio
+                {% when '08' %}Agosto
+                {% when '09' %}Septiembre
+                {% when '10' %}Octubre
+                {% when '11' %}Noviembre
+                {% when '12' %}Diciembre
+            {% endcase %} {{ start[0] }}
+        </time> - 
+        {% if include.experience.current %}
+            <time>Actualidad</time>
+        {% else %}
+            <time datetime="{{ include.experience.end_date }}">
+                {% assign end = include.experience.end_date | split: '-' %}
+                {% case end[1] %}
+                    {% when '01' %}Enero
+                    {% when '02' %}Febrero
+                    {% when '03' %}Marzo
+                    {% when '04' %}Abril
+                    {% when '05' %}Mayo
+                    {% when '06' %}Junio
+                    {% when '07' %}Julio
+                    {% when '08' %}Agosto
+                    {% when '09' %}Septiembre
+                    {% when '10' %}Octubre
+                    {% when '11' %}Noviembre
+                    {% when '12' %}Diciembre
+                {% endcase %} {{ end[0] }}
+            </time>
+        {% endif %}
+        | {{ include.experience.location }}
+    </p>
+    <ul>
+        {% for highlight in include.experience.highlights %}
+        <li>{{ highlight | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+        {% endfor %}
+    </ul>
+</div>

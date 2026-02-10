@@ -1,0 +1,29 @@
+- name: "Felipe Urrea"
+  position: "Jefe Desarrollo - Servicio Agricola Ganadero"
+  phone: "+569 6159 2887"
+  email: "luis.urrea@sag.gob.cl"
+
+- name: "Alejandro Salgado"
+  position: "Ex Jefe Business Intelligence - Artool SpA"
+  title: "Ingeniero Civil en Computacion"
+  phone: "+569 9633 9855"
+
+- name: "Alessandro Bianchini"
+  position: "Gerente General - Intelet Group"
+  phone: "+569 9209 3164"
+  email: "Alessandro.bianchini@intelet.cl"
+
+- name: "Luis Bascunan"
+  position: "Jefe Area Informatica - Intelet Group"
+  phone: "+569 6125 8985"
+  email: "luis.bascunan@intelet.cl"
+
+- name: "Fernando Dougnac"
+  position: "Gerente y Socio - Tecnologias del Conocimiento S.A."
+  phone: "+56 2233 39322"
+  email: "fdougnac@gmail.com"
+
+- name: "Jose Ignacio Barros"
+  position: "Publicidad - Floreria Maria Piedad Navarro"
+  phone: "+569 98207686"
+  email: "jibarrosv@gmail.com"

@@ -1,0 +1,29 @@
+- name: "Azure DevOps Zero Downtime Development and Deployment (CI/CD)"
+  provider: "Azure"
+  type: "Taller especializado"
+
+- name: "Liderazgo para Gerentes"
+  provider: "Dale Carnegie Training"
+  type: "Curso de liderazgo"
+
+- name: "Presentaciones de Alto Impacto"
+  provider: "Dale Carnegie Training"
+  type: "Curso de comunicacion"
+
+- name: "Relaciones Humanas"
+  provider: "Dale Carnegie Training"
+  type: "Curso de habilidades blandas"
+
+- name: "Aprende SCRUM"
+  provider: "LinkedIn Learning"
+  instructor: "Alejandro Solis"
+  credential: "Professional Development Units (PMI)"
+  date: "Junio 2019"
+
+- name: "Gestion de proyectos simplificada"
+  provider: "LinkedIn Learning"
+  instructors:
+    - "Clara Vega"
+    - "Chris Croft"
+  credential: "Professional Development Units (PMI)"
+  date: "Junio 2019"

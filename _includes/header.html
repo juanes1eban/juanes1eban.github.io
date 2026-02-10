@@ -1,0 +1,22 @@
+<header class="main-header">
+    <h1 itemprop="name">{{ site.data.personal.name }}</h1>
+    <p class="subtitle" itemprop="jobTitle">{{ site.data.personal.job_title }} | {{ site.data.personal.subtitle }}</p>
+    <div class="contact-bar">
+        <span itemprop="email">
+            <a href="mailto:{{ site.data.personal.email }}">{{ site.data.personal.email }}</a>
+        </span>
+        <span itemprop="telephone">
+            <a href="tel:{{ site.data.personal.phone }}">{{ site.data.personal.phone }}</a>
+        </span>
+        <span>
+            <a href="{{ site.data.personal.social.linkedin_url }}" itemprop="sameAs" target="_blank" rel="noopener">LinkedIn</a>
+        </span>
+        <span>
+            <a href="{{ site.data.personal.social.github_url }}" target="_blank" rel="noopener">GitHub</a>
+        </span>
+        <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span itemprop="addressLocality">{{ site.data.personal.location.city }}</span>, 
+            <span itemprop="addressCountry">{{ site.data.personal.location.country }}</span>
+        </span>
+    </div>
+</header>

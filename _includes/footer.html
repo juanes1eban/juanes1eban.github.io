@@ -1,0 +1,8 @@
+<footer>
+    <p>{{ site.data.personal.name }} | Curriculum Vitae</p>
+    <p>Ultima actualizacion: {{ 'now' | date: "%B %Y" | replace: "January", "Enero" | replace: "February", "Febrero" | replace: "March", "Marzo" | replace: "April", "Abril" | replace: "May", "Mayo" | replace: "June", "Junio" | replace: "July", "Julio" | replace: "August", "Agosto" | replace: "September", "Septiembre" | replace: "October", "Octubre" | replace: "November", "Noviembre" | replace: "December", "Diciembre" }}</p>
+    <p>
+        <a href="{{ site.data.personal.social.linkedin_url }}" target="_blank" rel="noopener">Ver perfil completo en LinkedIn</a> | 
+        <a href="{{ site.data.personal.social.github_url }}" target="_blank" rel="noopener">GitHub Profile</a>
+    </p>
+</footer>

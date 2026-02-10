@@ -1,0 +1,113 @@
+- role: "Ingeniero Civil en Computacion - Lider Tecnico"
+  company: "Servicio Agricola y Ganadero (SAG)"
+  company_type: "government"
+  location: "Santiago Centro"
+  start_date: "2019-09"
+  end_date: "present"
+  current: true
+  highlights:
+    - "**Modernizacion de Sistemas:** Lidero el desarrollo e implementacion de un nuevo sistema de Cobro, Pago y Tarifas basado en APIs REST utilizando .NET 8, con librerias NuGet personalizadas para reglas de negocio."
+    - "**Integracion de Pagos:** Integracion exitosa de pasarelas WebPay y WebPay Mall utilizando .NET Transbank SDK, aumentando transacciones online y optimizando la experiencia de usuario."
+    - "**Facturacion:** Integracion del sistema de facturacion con software Sigifn de Browse, mejorando precision financiera y reduciendo tiempos de procesamiento."
+    - "**Firma Electronica:** Desarrollo de solucion de Firma Electronica Avanzada con Angular, eliminando procesos en papel y agilizando tiempos de respuesta."
+    - "**DevOps:** Administracion de proyectos con metodologias agiles en Azure DevOps, incluyendo gestion de repositorios Git, Pull Requests y Pipelines CI/CD."
+    - "**Cloud:** Implementacion de soluciones en Azure (Blobs Storage, Logic Apps, Web Apps) y despliegue en OpenShift (RedHat)."
+    - "**Microservicios:** Desarrollo de microservicios REST con NodeJS y Express."
+    - "**ETL:** Extraccion, transformacion y carga de datos con Pentaho, MongoDB, SQL Server."
+    - "**IA Generativa y Vibe Coding:** Desarrollo asistido por IA utilizando Windsurf IDE, VS Code con GitHub Copilot, OpenCode CLI con Claude. Experiencia practica con modelos Claude (Anthropic), ChatGPT (OpenAI), Gemini (Google) para generacion de codigo, refactorizacion, debugging y optimizacion de flujos de trabajo. Prompt Engineering avanzado para maximizar productividad."
+    - "**Mantenimiento:** Soporte a aplicaciones en BizTalk 2013, .NET Framework 4, y Classic ASP."
+
+- role: "Analista BI y Desarrollador Web"
+  company: "Artool SpA"
+  company_type: "private"
+  location: "Ciudad Empresarial, Huechuraba"
+  start_date: "2018-06"
+  end_date: "2019-04"
+  current: false
+  highlights:
+    - "Diseno e implementacion de interfaz grafica web para filtros de campanas de llamadas con nodos arrastrables (PHP, JavaScript, jQuery)."
+    - "Sistema web integral para gestion de campanas de marketing manuales y automatizadas con reportes detallados."
+    - "Creacion y mantenimiento de Datamart para sistema de salud con integracion a SugarCRM via APIs REST."
+    - "Desarrollo de modelos de marketing RFM y Market Basket Analysis usando SQL Server y R Services."
+    - "Construccion de Datamarts para consumo con Tableau usando SQL Server Data Tools (SSDT)."
+    - "Automatizacion de respaldos de BBDD SQL Server con PHP y Amazon S3."
+    - "Documentacion tecnica con Erwin."
+
+- role: "Encargado Area Desarrollo / IT Project Manager"
+  company: "Intelet Group"
+  company_type: "private"
+  location: "Santiago Centro"
+  start_date: "2015-06"
+  end_date: "2018-03"
+  current: false
+  highlights:
+    - "Sistema de automatizacion de reportes de gestiones telefonicas para Movistar, Entel y Autopistas usando CakePHP 3, PHP y JavaScript."
+    - "Sistema web para gestion de envio de SMS con Gateway, monitoreo de estado, reportes, roles y cuotas."
+    - "Reestructuracion de sistema de reclamos de PHP procedimental a orientado a objetos (operativo hasta 2019)."
+    - "Soluciones ETL con Pentaho Data Integration para Datamart de cobranzas."
+    - "Sistema de gestion de calidad de empleados."
+    - "Administracion de servidores Ubuntu Server."
+
+- role: "Desarrollador Web Freelance"
+  company: "Bannercity"
+  company_type: "private"
+  location: "Providencia"
+  start_date: "2015-03"
+  end_date: "2015-06"
+  current: false
+  highlights:
+    - "Gestion de servidores y reglas en Amazon EC2."
+    - "Desarrollo de videojuego interactivo para Teletrak en JavaScript."
+    - "Backoffice para gestion de concursos en CakePHP 2."
+    - "Integracion de servicios Google Maps para Sernatur."
+    - "Configuracion de modulos de pago WebPay en Prestashop."
+
+- role: "Desarrollador Web"
+  company: "Psicus"
+  company_type: "private"
+  location: "Santiago Centro"
+  start_date: "2013-11"
+  end_date: "2015-03"
+  current: false
+  highlights:
+    - "Mantenimiento de aplicaciones en CakePHP 2 para sistema de control presupuestario."
+    - "Soporte tecnico y mantenimiento de sistema Balance Scorecard en ASP Classic."
+
+- role: "Desarrollador Web"
+  company: "Floreria Maria Piedad Navarro"
+  company_type: "private"
+  location: "Vitacura"
+  start_date: "2014-08"
+  end_date: "2015-04"
+  current: false
+  highlights:
+    - "Configuracion e implementacion de vitrina virtual con WordPress y WooCommerce."
+    - "Personalizacion de plantillas y desarrollo de modulo de pago por deposito bancario."
+
+- role: "Desarrollador Web"
+  company: "IT Line"
+  company_type: "private"
+  location: "Providencia"
+  start_date: "2013-06"
+  end_date: "2013-10"
+  current: false
+  highlights:
+    - "Desarrollo de aplicacion web en CakePHP 1.3 para simulacion de certificacion internacional de ingenieria de proyectos."
+    - "Mantenimiento y actualizaciones de diseno web en red social con CakePHP 1.3."
+
+- role: "Jefe de Area IT"
+  company: "Tecnologias del Conocimiento"
+  company_type: "private"
+  location: "Providencia"
+  start_date: "2008-09"
+  end_date: "2013-06"
+  current: false
+  highlights:
+    - "Creacion e implementacion del area de IT de la empresa."
+    - "Liderazgo de equipo de profesionales IT."
+    - "Mantenimiento y desarrollo de Dokeos LMS (Chamilo LMS) en PHP."
+    - "Diseno e implementacion de Datamarts con Pentaho BI Server y Report Designer."
+    - "Automatizacion de generacion de reportes para clientes."
+    - "Capacitaciones a clientes en Peru y Chile sobre gestion de plataformas LMS."
+    - "Administracion de servidores Linux (Fedora y OpenSuse)."
+    - "Desarrollo con SCORM 1.2."

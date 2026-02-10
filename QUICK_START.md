@@ -1,113 +1,198 @@
-# 🚀 Guía Rápida de Publicación
+# ⚡ Quick Start Guide
 
-## ✅ Estado del Proyecto
-
-Tu sitio de GitHub Pages está **100% listo** para publicarse.
-
-## 📦 Archivos Creados
-
-- ✅ `index.html` - Tu CV completo con SEO optimizado
-- ✅ `_config.yml` - Configuración de Jekyll
-- ✅ `.gitignore` - Archivos a ignorar en Git
-- ✅ `robots.txt` - Configuración para motores de búsqueda
-- ✅ `sitemap.xml` - Mapa del sitio para SEO
-- ✅ `README.md` - Documentación del proyecto
-- ✅ `DEPLOYMENT.md` - Instrucciones completas de deployment
-- ✅ `.github/workflows/jekyll-gh-pages.yml` - GitHub Actions (ya existía)
-
-## 🎯 Para Publicar AHORA (3 comandos):
-
-```bash
-git add .
-git commit -m "feat: Sitio de CV completo optimizado para SEO"
-git push origin main
-```
-
-## ⏱️ Después del Push:
-
-1. **Espera 2-3 minutos** mientras GitHub Actions hace el build
-2. **Visita:** https://juan-valenzuela-rodriguez.github.io/
-3. **Verifica el deployment en:** https://github.com/juan-valenzuela-rodriguez/juan-valenzuela-rodriguez.github.io/actions
-
-## 🎨 Características Implementadas
-
-### SEO y Visibilidad
-- ✅ Meta tags completos (title, description, keywords)
-- ✅ Open Graph para redes sociales
-- ✅ **8 bloques JSON-LD** con datos estructurados Schema.org
-- ✅ URLs canónicas apuntando a GitHub Pages
-- ✅ Sitemap.xml para indexación
-- ✅ Robots.txt optimizado
-
-### Contenido
-- ✅ Perfil profesional completo
-- ✅ **+15 años de experiencia** documentada
-- ✅ **1,948 commits** en proyectos SAG verificables
-- ✅ Stack tecnológico completo (.NET 8, Azure, NodeJS, Angular)
-- ✅ Sección de **AI-Assisted Development** con Vibe Coding
-- ✅ Referencias profesionales
-- ✅ Certificaciones y formación
-
-### Diseño
-- ✅ Responsive (móvil, tablet, desktop)
-- ✅ CSS moderno con variables
-- ✅ Paleta profesional (estilo LinkedIn)
-- ✅ Print-friendly
-- ✅ Accesibilidad (HTML5 semántico)
-
-## 🔍 Cambios Importantes Aplicados
-
-### URLs Actualizadas
-```html
-Antes: https://www.linkedin.com/in/juanestebanvalenzuela/
-Ahora: https://juan-valenzuela-rodriguez.github.io/
-```
-
-### GitHub Agregado
-- Enlace a GitHub en header
-- GitHub en JSON-LD sameAs
-- GitHub username en _config.yml
-
-## 📊 Próximos Pasos Opcionales
-
-### Inmediato (Recomendado)
-- [ ] Agregar foto profesional (formato: photo.jpg en la raíz)
-- [ ] Actualizar el año si es diferente a 2026
-- [ ] Eliminar datos sensibles si lo deseas (dirección, teléfono)
-
-### Corto Plazo
-- [ ] Configurar Google Search Console
-- [ ] Agregar Google Analytics (opcional)
-- [ ] Crear favicon personalizado
-
-### Mediano Plazo
-- [ ] Dominio custom (ej: juanvalenzuela.dev)
-- [ ] Sección de blog con Jekyll
-- [ ] Portfolio visual de proyectos
-- [ ] Modo oscuro
-
-## 🆘 Ayuda Rápida
-
-### El sitio no se ve después del push
-- Espera 3-5 minutos
-- Limpia caché: Ctrl + Shift + R
-- Verifica Actions: https://github.com/tu-usuario/juan-valenzuela-rodriguez.github.io/actions
-
-### Error 404
-- Verifica que el repo sea público
-- Confirma que index.html está en la raíz
-- Revisa Settings > Pages en GitHub
-
-### Quiero actualizar el contenido
-1. Edita `index.html`
-2. `git add index.html`
-3. `git commit -m "update: Actualización de contenido"`
-4. `git push origin main`
-
-## 📧 Contacto
-
-Para más información: juan.esteban.valenzuela@gmail.com
+Guía rápida para empezar a trabajar con el sitio Jekyll.
 
 ---
 
-**¡Tu sitio está listo para brillar! 🌟**
+## 🚀 Publicar Cambios (Lo Más Común)
+
+```bash
+# 1. Hacer cambios en archivos YAML o CSS
+code _data/experiences.yml
+
+# 2. Agregar, commitear y publicar
+git add .
+git commit -m "update: Descripción de tus cambios"
+git push origin main
+
+# 3. Esperar 2-3 minutos
+# GitHub Actions compila y despliega automáticamente
+```
+
+**URL del sitio:** https://smellwing.github.io/juan-valenzuela-rodriguez.github.io/
+
+---
+
+## 📝 Ediciones Comunes
+
+### Actualizar teléfono/email
+
+```bash
+code _data/personal.yml
+```
+
+### Agregar nueva experiencia laboral
+
+```bash
+code _data/experiences.yml
+# Agregar al inicio del archivo
+```
+
+### Agregar nueva habilidad
+
+```bash
+code _data/skills.yml
+# Agregar en la categoría correspondiente
+```
+
+### Agregar certificación
+
+```bash
+code _data/certifications.yml
+```
+
+### Cambiar colores del sitio
+
+```bash
+code assets/css/base.css
+# Editar variables CSS en :root
+```
+
+---
+
+## 🎨 Personalización Básica
+
+### Cambiar color primario
+
+[assets/css/base.css](assets/css/base.css):
+```css
+:root {
+    --primary-color: #0077b5;  ← Cambia aquí
+}
+```
+
+### Modificar header
+
+```bash
+code _includes/header.html
+```
+
+### Modificar footer
+
+```bash
+code _includes/footer.html
+```
+
+---
+
+## 🧪 Testear Localmente (Opcional)
+
+### Opción 1: Con Docker (Recomendado)
+```bash
+docker run --rm -v ${PWD}:/srv/jekyll -p 4000:4000 jekyll/jekyll jekyll serve
+```
+
+### Opción 2: Jekyll Local
+```bash
+bundle exec jekyll serve --baseurl '/juan-valenzuela-rodriguez.github.io'
+# Visita: http://localhost:4000/juan-valenzuela-rodriguez.github.io/
+```
+
+---
+
+## 📁 Estructura Rápida
+
+```
+_data/          ← Edita tus datos aquí (YAML)
+_includes/      ← Componentes reutilizables
+_layouts/       ← Plantillas HTML
+assets/css/     ← Estilos CSS modulares
+index.md        ← Contenido principal
+_config.yml     ← Configuración Jekyll
+```
+
+---
+
+## ⚙️ Comandos Git Útiles
+
+```bash
+# Ver estado
+git status
+
+# Ver cambios
+git diff
+
+# Deshacer cambios no guardados
+git checkout -- archivo.yml
+
+# Ver historial
+git log --oneline
+
+# Crear rama de prueba
+git checkout -b mi-prueba
+```
+
+---
+
+## 🔍 Verificar Deployment
+
+1. **Push a GitHub:**
+   ```bash
+   git push origin main
+   ```
+
+2. **Ver progreso:**
+   - Ve a: https://github.com/smellwing/juan-valenzuela-rodriguez.github.io/actions
+   - Espera el checkmark verde ✅
+
+3. **Visitar sitio:**
+   - https://smellwing.github.io/juan-valenzuela-rodriguez.github.io/
+
+---
+
+## 🆘 Problemas Comunes
+
+### Sitio no se actualiza
+
+```bash
+# Forzar rebuild
+git commit --allow-empty -m "trigger rebuild"
+git push origin main
+```
+
+### Error de sintaxis YAML
+
+- Verifica indentación (2 espacios)
+- Strings con `:` deben ir entre comillas: `"Texto: con dos puntos"`
+- Arrays usan `-` con espacios después
+
+### CSS no se aplica
+
+- Verifica que el archivo CSS esté en `assets/css/`
+- Verifica que esté linkeado en `_layouts/default.html`
+- Limpia cache del navegador (Ctrl+Shift+R)
+
+---
+
+## 📚 Más Información
+
+- **Guía completa:** [README.md](README.md)
+- **Arquitectura:** [ARCHITECTURE.md](ARCHITECTURE.md)
+- **Deployment:** [DEPLOYMENT.md](DEPLOYMENT.md)
+- **Migración:** [JEKYLL_MIGRATION.md](JEKYLL_MIGRATION.md)
+
+---
+
+## 💡 Workflow Recomendado
+
+```
+1. Editar → _data/*.yml o assets/css/*.css
+2. Test local (opcional) → bundle exec jekyll serve
+3. Commit → git commit -m "mensaje"
+4. Push → git push origin main
+5. Verificar → Ver GitHub Actions y sitio publicado
+```
+
+---
+
+**¡Listo para empezar! 🚀**

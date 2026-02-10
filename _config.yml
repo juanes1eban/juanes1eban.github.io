@@ -3,12 +3,26 @@ title: "Juan Esteban Valenzuela Rodriguez - Full-Stack Developer"
 description: "Ingeniero Civil en Computacion con +15 años de experiencia en desarrollo full-stack. Especializado en .NET, JavaScript, PHP, Azure, metodologias agiles."
 author: "Juan Esteban Valenzuela Rodriguez"
 email: "juan.esteban.valenzuela@gmail.com"
-url: "https://juan-valenzuela-rodriguez.github.io"
-baseurl: ""
+url: "https://smellwing.github.io"
+baseurl: "/juan-valenzuela-rodriguez.github.io"
 
 # Social Media
 linkedin_username: juanestebanvalenzuela
 github_username: juan-valenzuela-rodriguez
+
+# SEO Keywords
+keywords:
+  - "Ingeniero Civil Computacion"
+  - "Full-Stack Developer"
+  - ".NET"
+  - "JavaScript"
+  - "PHP"
+  - "Azure"
+  - "Angular"
+  - "NodeJS"
+  - "SQL Server"
+  - "Chile"
+  - "Santiago"
 
 # Build Settings
 markdown: kramdown
@@ -27,6 +41,9 @@ exclude:
   - .sass-cache
   - .jekyll-cache
   - .git
+  - DEPLOYMENT.md
+  - QUICK_START.md
+  - README.md
 
 # SEO Settings
 lang: es
@@ -39,3 +56,21 @@ timezone: America/Santiago
 # Additional Settings
 show_excerpts: false
 permalink: pretty
+
+# Collections (para futuros posts de blog)
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

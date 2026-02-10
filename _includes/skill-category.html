@@ -1,0 +1,8 @@
+<div class="skill-category">
+    <h3>{{ include.category.name }}</h3>
+    <div class="skill-tags">
+        {% for skill in include.category.skills %}
+        <span class="skill-tag">{{ skill }}</span>
+        {% endfor %}
+    </div>
+</div>

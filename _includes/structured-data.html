@@ -1,0 +1,129 @@
+<!-- JSON-LD Structured Data for AI/Search Engines -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "{{ site.url }}/",
+    "name": "{{ site.data.personal.name }}",
+    "givenName": "Juan Esteban",
+    "familyName": "Valenzuela Rodriguez",
+    "jobTitle": "{{ site.data.personal.job_title }}",
+    "description": "{{ site.data.personal.bio | strip_newlines }}",
+    "url": "{{ site.url }}/",
+    "email": "{{ site.data.personal.email }}",
+    "telephone": "{{ site.data.personal.phone }}",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{ site.data.personal.location.full_address }}",
+        "addressLocality": "{{ site.data.personal.location.city }}",
+        "addressRegion": "{{ site.data.personal.location.region }}",
+        "addressCountry": "{{ site.data.personal.location.country }}"
+    },
+    "nationality": {
+        "@type": "Country",
+        "name": "{{ site.data.personal.location.country }}"
+    },
+    "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "{{ site.data.education[0].institution }}",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Nunoa",
+            "addressCountry": "Chile"
+        }
+    },
+    "knowsLanguage": [
+        {% for lang in site.data.personal.languages %}
+        {
+            "@type": "Language",
+            "name": "{{ lang.name }}",
+            "proficiencyLevel": "{{ lang.level }}"
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ],
+    "sameAs": [
+        "{{ site.data.personal.social.linkedin_url }}",
+        "{{ site.data.personal.social.github_url }}"
+    ]
+}
+</script>
+
+<!-- Work Experience JSON-LD -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Experiencia Laboral de {{ site.data.personal.name }}",
+    "description": "Historial profesional completo con mas de 15 anos de experiencia",
+    "numberOfItems": {{ site.data.experiences | size }},
+    "itemListElement": [
+        {% for exp in site.data.experiences %}
+        {
+            "@type": "ListItem",
+            "position": {{ forloop.index }},
+            "item": {
+                "@type": "OrganizationRole",
+                "roleName": "{{ exp.role }}",
+                "startDate": "{{ exp.start_date }}",
+                "endDate": "{% if exp.current %}present{% else %}{{ exp.end_date }}{% endif %}",
+                "memberOf": {
+                    "@type": "{% if exp.company_type == 'government' %}GovernmentOrganization{% else %}Organization{% endif %}",
+                    "name": "{{ exp.company }}",
+                    "address": "{{ exp.location }}"
+                }
+            }
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ]
+}
+</script>
+
+<!-- Skills JSON-LD -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Habilidades Tecnicas",
+    "itemListElement": [
+        {% for category in site.data.skills.categories %}
+        {
+            "@type": "ListItem",
+            "position": {{ forloop.index }},
+            "item": {
+                "@type": "DefinedTerm",
+                "name": "{{ category.name }}",
+                "description": "{{ category.skills | join: ', ' }}"
+            }
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ]
+}
+</script>
+
+<!-- Projects JSON-LD -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Proyectos y Contribuciones Git en SAG",
+    "itemListElement": [
+        {% for project in site.data.projects %}
+        {
+            "@type": "ListItem",
+            "position": {{ forloop.index }},
+            "item": {
+                "@type": "SoftwareSourceCode",
+                "name": "{{ project.name }}",
+                "description": "{{ project.description }}",
+                "programmingLanguage": {{ project.tech | jsonify }},
+                "additionalProperty": {
+                    "@type": "PropertyValue",
+                    "name": "commits",
+                    "value": "{{ project.commits }}"
+                }
+            }
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ]
+}
+</script>
