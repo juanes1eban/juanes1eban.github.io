@@ -1,5 +1,5 @@
 .experience-item {
-    border-left: 3px solid var(--primary-color);
+    border-left: 3px solid var(--secondary-color);
     padding-left: 20px;
     margin-bottom: 25px;
 }
@@ -19,7 +19,7 @@
 }
 
 .experience-item .period {
-    color: #666;
+    color: var(--text-secondary);
     font-size: 0.9rem;
     margin-bottom: 10px;
 }
@@ -30,4 +30,5 @@
 
 .experience-item li {
     margin-bottom: 8px;
+    color: var(--text-color);
 }

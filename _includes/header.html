@@ -1,22 +1,97 @@
-<header class="main-header">
-    <h1 itemprop="name">{{ site.data.personal.name }}</h1>
-    <p class="subtitle" itemprop="jobTitle">{{ site.data.personal.job_title }} | {{ site.data.personal.subtitle }}</p>
-    <div class="contact-bar">
-        <span itemprop="email">
-            <a href="mailto:{{ site.data.personal.email }}">{{ site.data.personal.email }}</a>
-        </span>
-        <span itemprop="telephone">
-            <a href="tel:{{ site.data.personal.phone }}">{{ site.data.personal.phone }}</a>
-        </span>
-        <span>
-            <a href="{{ site.data.personal.social.linkedin_url }}" itemprop="sameAs" target="_blank" rel="noopener">LinkedIn</a>
-        </span>
-        <span>
-            <a href="{{ site.data.personal.social.github_url }}" target="_blank" rel="noopener">GitHub</a>
-        </span>
-        <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-            <span itemprop="addressLocality">{{ site.data.personal.location.city }}</span>, 
-            <span itemprop="addressCountry">{{ site.data.personal.location.country }}</span>
-        </span>
+<header class="main-header terminal-header">
+    <div class="terminal-window">
+        <div class="terminal-titlebar">
+            <div class="terminal-buttons-left">
+                <span class="terminal-button minimize"></span>
+                <span class="terminal-button maximize"></span>
+                <span class="terminal-button close"></span>
+            </div>
+            <span class="terminal-title">juan@portfolio:~</span>
+            <div class="terminal-menu">
+                <span class="menu-icon">☰</span>
+            </div>
+        </div>
+        <div class="terminal-body">
+            <div class="terminal-line">
+                <span class="prompt">$</span>
+                <span class="command">whoami</span>
+            </div>
+            <div class="terminal-output">
+                <h1 itemprop="name">{{ site.data.personal.name }}</h1>
+            </div>
+            
+            <div class="terminal-line">
+                <span class="prompt">$</span>
+                <span class="command">cat /etc/role</span>
+            </div>
+            <div class="terminal-output">
+                <p class="subtitle" itemprop="jobTitle">{{ site.data.personal.job_title }} | {{ site.data.personal.subtitle }}</p>
+            </div>
+            
+            <div class="terminal-line">
+                <span class="prompt">$</span>
+                <span class="command">ls -la /contact/</span>
+            </div>
+            <div class="terminal-output contact-bar">
+                <span itemprop="email">
+                    📧 <a href="mailto:{{ site.data.personal.email }}">{{ site.data.personal.email }}</a>
+                </span>
+                <span itemprop="telephone">
+                    📱 <a href="tel:{{ site.data.personal.phone }}">{{ site.data.personal.phone }}</a>
+                </span>
+                <span>
+                    💼 <a href="{{ site.data.personal.social.linkedin_url }}" itemprop="sameAs" target="_blank" rel="noopener">LinkedIn</a>
+                </span>
+                <span>
+                    🐙 <a href="{{ site.data.personal.social.github_url }}" target="_blank" rel="noopener">GitHub</a>
+                </span>
+                <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                    📍 <span itemprop="addressLocality">{{ site.data.personal.location.city }}</span>, 
+                    <span itemprop="addressCountry">{{ site.data.personal.location.country }}</span>
+                </span>
+            </div>
+            
+            <div class="terminal-line terminal-typing-line">
+                <span class="prompt">$</span>
+                <span class="typed-command"></span>
+                <span class="cursor typing-cursor">█</span>
+            </div>
+            
+            <div class="terminal-output terminal-about" style="display: none;">
+                <div class="about-content">
+                    <p>{{ site.data.personal.bio }}</p>
+                    <p class="quote-terminal">"{{ site.data.personal.quote }}"</p>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
+
+<script>
+// Terminal typewriter animation
+(function() {
+    const command = 'opencode -p "Escribe Acerca de mi"';
+    const typedElement = document.querySelector('.typed-command');
+    const cursor = document.querySelector('.typing-cursor');
+    const aboutSection = document.querySelector('.terminal-about');
+    let i = 0;
+    
+    function typeWriter() {
+        if (i < command.length) {
+            typedElement.textContent += command.charAt(i);
+            i++;
+            setTimeout(typeWriter, 50); // 50ms entre caracteres
+        } else {
+            // Cuando termina de escribir, ocultar cursor y mostrar respuesta
+            setTimeout(function() {
+                cursor.style.display = 'none';
+                aboutSection.style.display = 'block';
+                aboutSection.classList.add('show');
+            }, 300);
+        }
+    }
+    
+    // Iniciar la animación después de 1 segundo
+    setTimeout(typeWriter, 1000);
+})();
+</script>

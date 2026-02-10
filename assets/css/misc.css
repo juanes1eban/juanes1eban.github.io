@@ -17,9 +17,10 @@
 }
 
 .reference-card {
-    background: var(--bg-color);
+    background: rgba(48, 54, 61, 0.3);
     padding: 15px;
     border-radius: 6px;
+    border: 1px solid var(--border-color);
 }
 
 .reference-card h4 {
@@ -29,5 +30,5 @@
 
 .reference-card .position {
     font-size: 0.9rem;
-    color: #666;
+    color: var(--text-secondary);
 }

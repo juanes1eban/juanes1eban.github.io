@@ -1,9 +1,22 @@
 @media (max-width: 600px) {
-    header.main-header h1 {
-        font-size: 1.6rem;
+    .terminal-window {
+        border-radius: 4px;
     }
     
-    .contact-bar {
+    .terminal-titlebar {
+        padding: 8px 12px;
+    }
+    
+    .terminal-body {
+        padding: 15px;
+        font-size: 0.85rem;
+    }
+    
+    .terminal-output h1 {
+        font-size: 1.4rem;
+    }
+    
+    .terminal-output.contact-bar {
         flex-direction: column;
         gap: 10px;
     }
@@ -21,20 +34,88 @@
 @media print {
     body {
         background: white;
+        color: #333;
     }
     
     section {
         box-shadow: none;
         break-inside: avoid;
+        background: white !important;
+        border: 1px solid #ddd;
+    }
+    
+    section h2 {
+        color: #0077b5 !important;
+    }
+    
+    /* Expandir todas las secciones al imprimir */
+    .collapsible.collapsed .collapsible-content {
+        max-height: none !important;
+        opacity: 1 !important;
+    }
+    
+    .collapsible.collapsed h2 {
+        margin-bottom: 20px !important;
+        border-bottom: 2px solid #0077b5 !important;
+        padding-bottom: 10px !important;
+    }
+    
+    .collapse-icon {
+        display: none !important;
     }
 
-    .contact-bar a {
-        color: var(--text-color);
-    }
-
-    header.main-header {
-        background: var(--primary-color);
+    .terminal-header {
+        background: white !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
+    }
+    
+    .terminal-window {
+        background: white !important;
+        box-shadow: none !important;
+        border: 2px solid #333;
+    }
+    
+    .terminal-titlebar {
+        display: none;
+    }
+    
+    .terminal-body {
+        background: white !important;
+        color: #333 !important;
+    }
+    
+    .terminal-line .prompt,
+    .terminal-line .command,
+    .cursor {
+        color: #666 !important;
+    }
+    
+    .terminal-output,
+    .terminal-output h1,
+    .terminal-output .subtitle,
+    .terminal-output.contact-bar a {
+        color: #333 !important;
+    }
+    
+    .terminal-about .about-content,
+    .terminal-about .quote-terminal {
+        color: #333 !important;
+    }
+    
+    a {
+        color: #0077b5 !important;
+    }
+    
+    .skill-tag {
+        background: #e0e0e0 !important;
+        color: #333 !important;
+    }
+    
+    .project-card,
+    .reference-card,
+    .skill-category {
+        background: #f5f5f5 !important;
+        border: 1px solid #ddd !important;
     }
 }

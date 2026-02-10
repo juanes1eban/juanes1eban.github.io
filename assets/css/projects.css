@@ -1,12 +1,20 @@
 .project-card {
-    background: var(--bg-color);
+    background: rgba(48, 54, 61, 0.3);
     padding: 15px;
     border-radius: 6px;
+    border: 1px solid var(--border-color);
     margin-bottom: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    border-color: var(--primary-color);
 }
 
 .project-card h3 {
-    color: var(--primary-color);
+    color: var(--accent-cyan);
     font-size: 1rem;
     margin-bottom: 8px;
 }
@@ -17,11 +25,11 @@
 }
 
 .project-meta strong {
-    color: var(--text-color);
+    color: var(--secondary-color);
 }
 
 .project-description {
     font-size: 0.85rem;
-    color: #666;
+    color: var(--text-secondary);
     margin-bottom: 10px;
 }
