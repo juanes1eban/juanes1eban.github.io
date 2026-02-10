@@ -1,57 +1,57 @@
----
-- name: "Cobro Pago Y Tarifas"
-  commits: 1217
-  role: "Contribuidor Principal"
-  description: "Sistema de Cobro, Pago y Tarifas del SAG. APIs REST, .NET 8, librerias NuGet personalizadas, integracion WebPay."
-  tech:
-    - ".NET 8"
-    - "C#"
-    - "REST API"
-    - "SQL Server"
+git_projects:
+  - name: "Cobro Pago Y Tarifas"
+    commits: 1217
+    role: "Contribuidor Principal"
+    description: "Sistema de Cobro, Pago y Tarifas del SAG. APIs REST, .NET 8, librerias NuGet personalizadas, integracion WebPay."
+    tech:
+      - ".NET 8"
+      - "C#"
+      - "REST API"
+      - "SQL Server"
 
-- name: "sag.portalpagos.lib.business.v1"
-  commits: 267
-  role: "Autor Principal"
-  description: "Libreria de reglas de negocio para el Portal de Pagos. Logica de calculos, validaciones y procesamiento de solicitudes."
-  tech:
-    - ".NET"
-    - "NuGet"
-    - "Business Logic"
+  - name: "sag.portalpagos.lib.business.v1"
+    commits: 267
+    role: "Autor Principal"
+    description: "Libreria de reglas de negocio para el Portal de Pagos. Logica de calculos, validaciones y procesamiento de solicitudes."
+    tech:
+      - ".NET"
+      - "NuGet"
+      - "Business Logic"
 
-- name: "sag.portalpagos.api.pagos.v1"
-  commits: 217
-  role: "Autor Principal"
-  description: "API REST de Pagos para el Portal SAG. Endpoints de cobro, recaudacion y gestion de transacciones."
-  tech:
-    - ".NET"
-    - "REST API"
-    - "WebPay"
+  - name: "sag.portalpagos.api.pagos.v1"
+    commits: 217
+    role: "Autor Principal"
+    description: "API REST de Pagos para el Portal SAG. Endpoints de cobro, recaudacion y gestion de transacciones."
+    tech:
+      - ".NET"
+      - "REST API"
+      - "WebPay"
 
-- name: "sag.portalpagos.lib.data.v1"
-  commits: 146
-  role: "Autor Principal"
-  description: "Libreria de acceso a datos. Entity Framework, repositorios, stored procedures."
-  tech:
-    - ".NET"
-    - "Entity Framework"
-    - "SQL Server"
+  - name: "sag.portalpagos.lib.data.v1"
+    commits: 146
+    role: "Autor Principal"
+    description: "Libreria de acceso a datos. Entity Framework, repositorios, stored procedures."
+    tech:
+      - ".NET"
+      - "Entity Framework"
+      - "SQL Server"
 
-- name: "sag-calendario-api"
-  commits: 51
-  role: "Autor Principal"
-  description: "API de Calendario y Festivos. Gestion de dias habiles, feriados nacionales y regionales."
-  tech:
-    - ".NET"
-    - "REST API"
+  - name: "sag-calendario-api"
+    commits: 51
+    role: "Autor Principal"
+    description: "API de Calendario y Festivos. Gestion de dias habiles, feriados nacionales y regionales."
+    tech:
+      - ".NET"
+      - "REST API"
 
-- name: "sag.tramites.api.tramitesV2"
-  commits: 43
-  role: "Contribuidor"
-  description: "API de Tramites V2. Gestion de solicitudes ciudadanas, integracion con servicios de calendario."
-  tech:
-    - "TypeScript"
-    - "NodeJS"
-    - "REST API"
+  - name: "sag.tramites.api.tramitesV2"
+    commits: 43
+    role: "Contribuidor"
+    description: "API de Tramites V2. Gestion de solicitudes ciudadanas, integracion con servicios de calendario."
+    tech:
+      - "TypeScript"
+      - "NodeJS"
+      - "REST API"
 
 other_projects:
   - name: "emulador_cgu_apws0051"

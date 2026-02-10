@@ -33,7 +33,7 @@ description: "Ingeniero Civil en Computacion con +15 anos de experiencia en desa
     <p class="section-intro">Repositorios con commits confirmados bajo el email <code>juan.valenzuelar@sag.gob.cl</code>. Total: ~1,948 commits en 8 repositorios.</p>
     
     <div class="skills-grid">
-        {% for project in site.data.projects %}
+        {% for project in site.data.projects.git_projects %}
             {% include project-card.html project=project %}
         {% endfor %}
     </div>
