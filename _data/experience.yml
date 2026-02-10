@@ -1,0 +1,29 @@
+- puesto: "Desarrollador Senior"
+  empresa: "Empresa Tecnológica S.L."
+  periodo: "2020 - Presente"
+  ubicacion: "Madrid, España"
+  descripcion: "Desarrollo de aplicaciones web y móviles utilizando tecnologías modernas."
+  logros:
+    - "Lideré el desarrollo de una plataforma que aumentó la eficiencia en un 40%"
+    - "Implementé mejoras en el proceso de CI/CD reduciendo el tiempo de despliegue"
+    - "Mentoricé a 5 desarrolladores junior del equipo"
+
+- puesto: "Desarrollador Full Stack"
+  empresa: "StartUp Innovadora"
+  periodo: "2018 - 2020"
+  ubicacion: "Barcelona, España"
+  descripcion: "Desarrollo de aplicaciones web utilizando JavaScript y Python."
+  logros:
+    - "Desarrollé el MVP de la aplicación principal de la empresa"
+    - "Optimicé el rendimiento de la base de datos reduciendo tiempos de consulta en 50%"
+    - "Colaboré en la arquitectura de microservicios de la plataforma"
+
+- puesto: "Desarrollador Junior"
+  empresa: "Consultora Tech"
+  periodo: "2016 - 2018"
+  ubicacion: "Madrid, España"
+  descripcion: "Desarrollo y mantenimiento de aplicaciones empresariales."
+  logros:
+    - "Participé en proyectos para clientes del sector financiero"
+    - "Implementé nuevas funcionalidades en aplicaciones legacy"
+    - "Contribuí a la documentación técnica del equipo"

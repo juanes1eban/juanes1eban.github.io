@@ -1,0 +1,44 @@
+# Site settings
+title: Juan Valenzuela Rodriguez
+email: juan@example.com
+description: >-
+  Curriculum Vitae y portafolio personal de Juan Valenzuela Rodriguez.
+  Desarrollador y profesional con experiencia en tecnología.
+baseurl: ""
+url: "https://juan-valenzuela-rodriguez.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Collections
+collections:
+  experiencia:
+    output: true
+    permalink: /experiencia/:path/
+  educacion:
+    output: true
+    permalink: /educacion/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "experiencia"
+    values:
+      layout: "experience"
+  - scope:
+      path: ""
+      type: "educacion"
+    values:
+      layout: "education"

@@ -1,0 +1,37 @@
+- categoria: "Lenguajes de Programación"
+  items:
+    - "JavaScript / TypeScript"
+    - "Python"
+    - "Java"
+    - "Ruby"
+    - "HTML / CSS"
+
+- categoria: "Frameworks y Librerías"
+  items:
+    - "React / Vue.js"
+    - "Node.js / Express"
+    - "Django / Flask"
+    - "Spring Boot"
+    - "Jekyll"
+
+- categoria: "Bases de Datos"
+  items:
+    - "PostgreSQL"
+    - "MongoDB"
+    - "MySQL"
+    - "Redis"
+
+- categoria: "Herramientas y Tecnologías"
+  items:
+    - "Git / GitHub"
+    - "Docker / Kubernetes"
+    - "CI/CD (Jenkins, GitHub Actions)"
+    - "AWS / Azure"
+    - "Linux"
+
+- categoria: "Metodologías"
+  items:
+    - "Agile / Scrum"
+    - "TDD / BDD"
+    - "DevOps"
+    - "Microservicios"

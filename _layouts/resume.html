@@ -1,0 +1,97 @@
+---
+layout: default
+---
+<div class="resume">
+    <header class="resume-header">
+        <h1>{{ page.title }}</h1>
+        {% if page.subtitle %}
+        <p class="subtitle">{{ page.subtitle }}</p>
+        {% endif %}
+    </header>
+
+    <div class="resume-content">
+        {{ content }}
+
+        {% if site.data.personal %}
+        <section class="personal-info">
+            <h2>Información Personal</h2>
+            <ul>
+                {% if site.data.personal.nombre %}
+                <li><strong>Nombre:</strong> {{ site.data.personal.nombre }}</li>
+                {% endif %}
+                {% if site.data.personal.email %}
+                <li><strong>Email:</strong> <a href="mailto:{{ site.data.personal.email }}">{{ site.data.personal.email }}</a></li>
+                {% endif %}
+                {% if site.data.personal.telefono %}
+                <li><strong>Teléfono:</strong> {{ site.data.personal.telefono }}</li>
+                {% endif %}
+                {% if site.data.personal.ubicacion %}
+                <li><strong>Ubicación:</strong> {{ site.data.personal.ubicacion }}</li>
+                {% endif %}
+                {% if site.data.personal.linkedin %}
+                <li><strong>LinkedIn:</strong> <a href="{{ site.data.personal.linkedin }}" target="_blank">Ver perfil</a></li>
+                {% endif %}
+                {% if site.data.personal.github %}
+                <li><strong>GitHub:</strong> <a href="{{ site.data.personal.github }}" target="_blank">Ver perfil</a></li>
+                {% endif %}
+            </ul>
+        </section>
+        {% endif %}
+
+        {% if site.data.experience %}
+        <section class="experience">
+            <h2>Experiencia Profesional</h2>
+            {% for job in site.data.experience %}
+            <div class="job">
+                <h3>{{ job.puesto }}</h3>
+                <p class="company">{{ job.empresa }} | {{ job.periodo }}</p>
+                {% if job.ubicacion %}
+                <p class="location">{{ job.ubicacion }}</p>
+                {% endif %}
+                {% if job.descripcion %}
+                <p class="description">{{ job.descripcion }}</p>
+                {% endif %}
+                {% if job.logros %}
+                <ul class="achievements">
+                    {% for logro in job.logros %}
+                    <li>{{ logro }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </section>
+        {% endif %}
+
+        {% if site.data.education %}
+        <section class="education">
+            <h2>Educación</h2>
+            {% for edu in site.data.education %}
+            <div class="education-item">
+                <h3>{{ edu.titulo }}</h3>
+                <p class="institution">{{ edu.institucion }} | {{ edu.periodo }}</p>
+                {% if edu.descripcion %}
+                <p class="description">{{ edu.descripcion }}</p>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </section>
+        {% endif %}
+
+        {% if site.data.skills %}
+        <section class="skills">
+            <h2>Habilidades</h2>
+            {% for category in site.data.skills %}
+            <div class="skill-category">
+                <h3>{{ category.categoria }}</h3>
+                <ul>
+                    {% for skill in category.items %}
+                    <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </section>
+        {% endif %}
+    </div>
+</div>
