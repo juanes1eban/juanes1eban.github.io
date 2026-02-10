@@ -1,0 +1,41 @@
+# Site Settings
+title: "Juan Esteban Valenzuela Rodriguez - Full-Stack Developer"
+description: "Ingeniero Civil en Computacion con +15 años de experiencia en desarrollo full-stack. Especializado en .NET, JavaScript, PHP, Azure, metodologias agiles."
+author: "Juan Esteban Valenzuela Rodriguez"
+email: "juan.esteban.valenzuela@gmail.com"
+url: "https://juan-valenzuela-rodriguez.github.io"
+baseurl: ""
+
+# Social Media
+linkedin_username: juanestebanvalenzuela
+github_username: juan-valenzuela-rodriguez
+
+# Build Settings
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - .git
+
+# SEO Settings
+lang: es
+locale: es_CL
+timezone: America/Santiago
+
+# Google Analytics (opcional - descomentar y agregar tu ID)
+# google_analytics: UA-XXXXXXXXX-X
+
+# Additional Settings
+show_excerpts: false
+permalink: pretty
