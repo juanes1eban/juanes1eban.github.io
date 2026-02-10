@@ -44,6 +44,8 @@ exclude:
   - DEPLOYMENT.md
   - QUICK_START.md
   - README.md
+  - ARCHITECTURE.md
+  - JEKYLL_MIGRATION.md
 
 # SEO Settings
 lang: es
