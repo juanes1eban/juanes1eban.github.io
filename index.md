@@ -131,23 +131,27 @@ description: "Ingeniero Civil en Computacion con +15 anos de experiencia en desa
                         {% when '12' %}Diciembre
                     {% endcase %} {{ start[0] }}
                 </time> - 
-                <time datetime="{{ vol.end_date }}">
-                    {% assign end = vol.end_date | split: '-' %}
-                    {% case end[1] %}
-                        {% when '01' %}Enero
-                        {% when '02' %}Febrero
-                        {% when '03' %}Marzo
-                        {% when '04' %}Abril
-                        {% when '05' %}Mayo
-                        {% when '06' %}Junio
-                        {% when '07' %}Julio
-                        {% when '08' %}Agosto
-                        {% when '09' %}Septiembre
-                        {% when '10' %}Octubre
-                        {% when '11' %}Noviembre
-                        {% when '12' %}Diciembre
-                    {% endcase %} {{ end[0] }}
-                </time>
+                {% if vol.current %}
+                    <time>Actualidad</time>
+                {% else %}
+                    <time datetime="{{ vol.end_date }}">
+                        {% assign end = vol.end_date | split: '-' %}
+                        {% case end[1] %}
+                            {% when '01' %}Enero
+                            {% when '02' %}Febrero
+                            {% when '03' %}Marzo
+                            {% when '04' %}Abril
+                            {% when '05' %}Mayo
+                            {% when '06' %}Junio
+                            {% when '07' %}Julio
+                            {% when '08' %}Agosto
+                            {% when '09' %}Septiembre
+                            {% when '10' %}Octubre
+                            {% when '11' %}Noviembre
+                            {% when '12' %}Diciembre
+                        {% endcase %} {{ end[0] }}
+                    </time>
+                {% endif %}
             </p>
             <p>{{ vol.description }}</p>
         </div>
